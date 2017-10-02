@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> alfdkjal;fk </title>
+  </head>
+  <body>
+    <h1>LOOK AT MY FORM</h1>
+    <form action="/process">
+      <p>Gimme some info</p>
+      <input type="text" name="LOL">
+      <input type="submit" value="SHANLAU">
+    </form>
+  </body>
+</html>
