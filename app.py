@@ -3,16 +3,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def hi():
-    print app
-    print request.method
-    print request.args
-    print request.form
-    return render_template('stuff.html')
+    return render_template('form.html')
 
-@app.route("/process")
+@app.route("/auth")
 def process():
-    print request.args
-    return render_template('stuff.html')
+    person = request.args["Name"]
+    pref = request.args["Type"]
+    reqmeth = request.method
+    return render_template('auth.html', name = person, fry = pref, method = reqmeth)
 
 if __name__ == "__main__":
     app.debug = True
